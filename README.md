@@ -1,6 +1,6 @@
 # PPP_Crypto
 
-##Pasos para visualizar complilar y ejecutar el proyecto Perfect Paper Password
+## Pasos para visualizar complilar y ejecutar el proyecto Perfect Paper Password
 1. Clonar o descargar a partir del repositorio indicado
 2. Una vez descargado abrir el archivo PPP_Project.xcodeproj y visualizar su contenido
 3. Para compilar y ejecutar ponemos el comando cmd+R 
