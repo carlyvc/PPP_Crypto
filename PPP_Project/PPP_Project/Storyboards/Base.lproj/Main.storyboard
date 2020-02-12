@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aBH-0Y-HL3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PPP_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxx-nQ-0dd">
+                                <rect key="frame" x="127.5" y="792" width="159" height="39"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Generar Tarjeta">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="GenerarTarjeta:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AmV-wI-sfS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sequence Key:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wo-Q6-KbM">
+                                <rect key="frame" x="123.5" y="140" width="167.5" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LLAVE DE SECUENCIA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ff7-MW-kRb">
+                                <rect key="frame" x="145.5" y="177" width="123" height="14.5"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="0.63768193493150682" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edy-dt-fOB">
+                                <rect key="frame" x="141.5" y="215.5" width="131" height="40"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Generar llave">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="GenerateSequentialKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tvT-eP-z0v"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Muf-Nm-YfV">
+                                <rect key="frame" x="35" y="358" width="344.5" height="33.5"/>
+                                <string key="text">Alfabeto: !#%+23456789:=?@ABCDEFGHJKLMNPRS
+TUVWXYZabcdefghijkmnopqrstuvwxyz </string>
+                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="15"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TARJETA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR5-so-L9G">
+                                <rect key="frame" x="172.5" y="685.5" width="69.5" height="20.5"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="0.60327482880000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ff7-MW-kRb" firstAttribute="top" secondItem="7wo-Q6-KbM" secondAttribute="bottom" constant="8" id="8UC-Fe-k6k"/>
+                            <constraint firstItem="Muf-Nm-YfV" firstAttribute="top" secondItem="Edy-dt-fOB" secondAttribute="bottom" constant="102.5" id="Ao5-KW-wye"/>
+                            <constraint firstItem="ff7-MW-kRb" firstAttribute="top" secondItem="7wo-Q6-KbM" secondAttribute="bottom" constant="8" id="Fvh-nc-A6r"/>
+                            <constraint firstItem="Muf-Nm-YfV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Icu-Oc-a6V"/>
+                            <constraint firstItem="Edy-dt-fOB" firstAttribute="top" secondItem="ff7-MW-kRb" secondAttribute="bottom" constant="24" id="KcX-kC-FCd"/>
+                            <constraint firstItem="7wo-Q6-KbM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MH8-L8-Cli"/>
+                            <constraint firstItem="Mxx-nQ-0dd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MZ1-el-2kt"/>
+                            <constraint firstItem="Edy-dt-fOB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OlQ-vN-SCo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mxx-nQ-0dd" secondAttribute="bottom" constant="31" id="XIz-Tj-Rgq"/>
+                            <constraint firstItem="ff7-MW-kRb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bUS-ZV-jKI"/>
+                            <constraint firstItem="XR5-so-L9G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="git-LA-Eyx"/>
+                            <constraint firstItem="Mxx-nQ-0dd" firstAttribute="top" secondItem="XR5-so-L9G" secondAttribute="bottom" constant="86" id="oJY-dh-7Dn"/>
+                            <constraint firstItem="7wo-Q6-KbM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="pfg-nc-OlY"/>
+                            <constraint firstItem="7wo-Q6-KbM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vzj-yR-OCE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Thn-jB-rTO"/>
+                    <connections>
+                        <outlet property="OTPassword" destination="XR5-so-L9G" id="Tfb-bV-TyQ"/>
+                        <outlet property="SequentialKeyLabel" destination="ff7-MW-kRb" id="gy9-Sx-Vvv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="119.86607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PY1-VH-Dda">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aBH-0Y-HL3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fKG-qd-wCL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="P6H-Sq-lTF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ts-a0-Jvu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
+        </scene>
+    </scenes>
+</document>
